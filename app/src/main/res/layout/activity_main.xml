@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F4EF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="#245747">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ZDROWIE NA CO DZIEŃ"
+                android:textColor="#C7E3D1"
+                android:textSize="12sp"
+                android:letterSpacing="0.08" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sprawdź swoje BMI"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uzupełnij pomiary i poznaj wynik."
+                android:textColor="#E0EEE5"
+                android:textSize="14sp"
+                android:paddingTop="6dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twoje pomiary"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#263D32"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wzrost w centymetrach"
+            android:textColor="#40574A"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/poleWzrostu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="np. 172"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#51836A"
+            android:minHeight="52dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waga w kilogramach"
+            android:textColor="#40574A"
+            android:textSize="14sp"
+            android:paddingTop="14dp" />
+
+        <EditText
+            android:id="@+id/poleWagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="np. 68"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#51836A"
+            android:minHeight="52dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Płeć"
+            android:textColor="#263D32"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="22dp" />
+
+        <RadioGroup
+            android:id="@+id/wyborPlci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/opcjaKobieta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kobieta"
+                android:buttonTint="#34745A"
+                android:textColor="#263D32" />
+
+            <RadioButton
+                android:id="@+id/opcjaMezczyzna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mężczyzna"
+                android:buttonTint="#34745A"
+                android:textColor="#263D32"
+                android:layout_marginStart="12dp" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/zapiszPomiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zapamiętaj moje dane"
+            android:buttonTint="#34745A"
+            android:textColor="#40574A"
+            android:paddingTop="4dp" />
+
+        <Button
+            android:id="@+id/przyciskOblicz"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="OBLICZ WYNIK"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#34745A"
+            android:layout_marginTop="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TWÓJ REZULTAT"
+                android:textColor="#658071"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.06" />
+
+            <TextView
+                android:id="@+id/tekstWyniku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tutaj pojawi się wynik obliczeń."
+                android:textColor="#263D32"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingTop="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
